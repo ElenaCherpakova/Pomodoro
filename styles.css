@@ -1,0 +1,209 @@
+* {
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1546470427-227e2f27f02c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:center;
+  min-width: 100%;
+  min-height:100vh;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  margin-top: 35px;
+  color: white;
+  text-shadow: 1px 10px #040209;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  height: 60vh;
+  text-align: center;
+  background-color:rgba(192, 113, 113, 0.5);
+
+}
+
+.btn {
+  margin-top:100px;
+}
+
+button {
+  font-size: 23px;
+  padding:15px;
+  width: 200px;
+  color:white;
+  border-radius:100px;
+  margin: 28px;
+  background-color:#313e5575;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button:hover {
+  background-color:#a92c04;
+  border:2px solid #f24a1e;
+  color:white;
+
+}
+
+#link {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+#countdown {
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size:60px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px white;
+}
+
+#par, #parTwo {
+  display: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+  margin-bottom:40px;
+  text-align: center;
+  color:white;
+  text-shadow: 2px 1px #040209;
+}
+
+@media all and (max-width: 1024px) {
+  body{
+    background-position:center;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+  #countdown{
+    font-size: 180px;
+  }
+
+  button{
+    width: 100%;
+    margin-top:1px;
+    padding: 10px;
+    font-size:60px;
+  }
+
+  #link {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  img {
+    width: 90px;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+  body{
+    background-position:center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  #countdown{
+    margin-top:50px;
+    font-size: 55px;
+  }
+ 
+  button{
+    width: 80%;
+    padding: 3px;
+    font-size:25px;
+  }
+
+  #link {
+    width: 100%;
+    margin-top: 100px;
+  }
+  img {
+    width: 50px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body{
+    background-position:center;
+  }
+  h1 {
+    font-size: 33px;
+  }
+
+  #countdown {
+    margin-top: -10px;
+  } 
+
+  button{
+    width: 250px;
+    margin-top:1px;
+    padding: 10px;
+    font-size:20px;
+  }
+
+  #par, #parTwo {
+    display: block;
+    font-size: 20px;
+    width: auto;
+
+  }
+  #link {
+    margin: 0;
+  }
+
+}
+
+@media all and (max-width: 300px) {
+  body{
+    background-position:center;
+    min-height: fit-content;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .container{
+    margin: 0;
+    align-content: center;
+    width:100%;
+    min-width: max-content;
+  }
+
+  .btn{
+    margin:0;
+  }
+  button{
+    margin-top:30px;
+    padding: 15px;
+    font-size:15px;
+  }
+  #countdown{
+    font-size: 35px;
+    align-self: center;
+  }
+  #link {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+  }
+}
